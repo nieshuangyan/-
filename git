@@ -1,0 +1,16 @@
+1简单命令：
+git clone git@192.168.14.110:/home/git/DNN.git 从代码服务器克隆代码
+git status 查看状态
+git diff readme.txt  查看文件具体修改内容
+git pull 更新代码
+git log  命令显示从最近到最远的提交日志
+git log --pretty=oneline  显示最近一次日志
+git reset --hard 3628164  回到某个版本
+git checkout -- readme.txt  就是让这个文件回到最近一次git commit或git add时的状态
+git checkout -- file命令中的--很重要，没有--，就变成了“切换到另一个分支”的命令
+git rm test.txt  要从版本库中删除该文件，那就用命令git rm删掉，并且git commit
+
+2上传代码流程：
+2.1git add .  //加入所有改变的东西, 把文件添加到仓库,实际上就是把文件修改添加到暂存区；
+2.2git commit -m '10/28xina'  把文件提交到仓库,实际上就是把暂存区的所有内容提交到当前分支。
+2.3git push origin master   添加远程库 - 廖雪峰的官方网站
